@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@color/colorAccentLight"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imgview_plot_loc_row_icons"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/marker" />
+
+    <TextView
+        android:id="@+id/textview_main_row_lati_longi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@+id/textview_main_row_accuracy"
+        android:layout_toRightOf="@+id/imgview_plot_loc_row_icons"
+        android:text="latitude, longitude"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Menu"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/textview_main_row_accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:maxLength="5"
+        android:text="accuracy"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Menu"
+        android:textColor="@color/black" />
+</RelativeLayout>
